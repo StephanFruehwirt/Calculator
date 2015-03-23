@@ -123,6 +123,7 @@ public class Calculator extends ActionBarActivity implements View.OnClickListene
                 break;
             case R.id.buttonEqual:
                 calculateResult();
+                currentState = State.INIT;
                 break;
             default:
                 String recentNumber = textView.getText().toString();
